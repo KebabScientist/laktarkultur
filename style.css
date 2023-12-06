@@ -1,0 +1,92 @@
+.textC {
+    text-align: center;
+}
+.container {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: solid 1px black;
+}
+
+.NavBtn {
+    color: lightseagreen;
+    text-decoration: green;
+}
+.NavBtn:hover {
+    transition: 2s smooth;
+    outline: solid 2px grey;
+}
+.navFlex {
+    display: flex;
+    justify-content: center;
+    position: sticky    ;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    background-image: url(img/);
+}
+ul a {
+    transition: transform  0.2s ease-in-out;
+}
+ul a:hover {
+    transform: scale(0.75)
+
+}
+footer {
+    border-top: yellow;
+    background-color: lightgray;
+}
+body.dark-mode {
+   transition: 0.5s ease;
+   background-color: black;
+   color: white;
+}
+/* allt under har med light mode switch */
+.switch {
+    position: sticky;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+    
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
